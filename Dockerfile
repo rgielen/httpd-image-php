@@ -5,5 +5,7 @@ RUN apt-get update \
       && apt-get install -y --no-install-recommends \
         php5-gd \
         php5-curl \
-        libssh2-php 
+        libapache2-mod-php5 \
+        libssh2-php \
+      && a2enmod php5
 
