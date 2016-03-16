@@ -7,5 +7,8 @@ RUN apt-get update \
         php5-curl \
         libapache2-mod-php5 \
         libssh2-php \
+      && apt-get clean \
+      && rm -rf /var/lib/apt/lists/* \
+      && rm -rf /tmp/* \
       && a2enmod php5
 
