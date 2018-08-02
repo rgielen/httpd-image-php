@@ -2,7 +2,7 @@ FROM rgielen/httpd-image-simple:18.04
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
 RUN apt-get update \
-      && apt-get install -y --no-install-recommends \
+      && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         php-gd \
         php-curl \
         libapache2-mod-php \
