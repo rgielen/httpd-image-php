@@ -10,5 +10,5 @@ RUN apt-get update \
       && apt-get clean \
       && rm -rf /var/lib/apt/lists/* \
       && rm -rf /tmp/* \
-      && a2enmod php7.1
+      && a2enmod php7.2
 
